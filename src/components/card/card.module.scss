@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(89, 122, 96);
+  padding: 10px;
+  border-radius: 10px;
+  border: 4px solid rgb(137, 180, 146);
+  &__avatar {
+    margin-bottom: 5px;
+  }
+  &__name {
+    font-size: 20px;
+    color: antiquewhite;
+  }
+}
