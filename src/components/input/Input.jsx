@@ -2,8 +2,13 @@ import cn from "classnames";
 import styles from "./input.module.scss";
 import { useState } from "react";
 
-export default function Input() {
+export default function Input({ setInputTextHandler }) {
   const [text, setText] = useState("");
 
-  return <input type="text" className={cn(styles.input)} onInput={(e) => setText(e.target.value)} />;
+  const inputAction = (e) => {
+    setText(e.target.value);
+    setInputTextHandler(e.target.value);
+  };
+
+  return <input type="text" className={cn(styles.input)} onInput={inputAction} />;
 }

@@ -21,7 +21,7 @@ export default function Card({ data, setActiveUsersHandler }) {
       <div className={cn(styles.card__avatar)}>
         <Avatar img={img} stateActive={active}></Avatar>
       </div>
-      -<span className={cn(styles.card__name)}>{name}</span>
+      <span className={cn(styles.card__name)}>{name}</span>
     </div>
   );
 }

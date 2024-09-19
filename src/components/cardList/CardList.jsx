@@ -12,7 +12,7 @@ export default function CardList({ data }) {
       setActiveUsers(activeUsers.filter((el) => el !== id));
       return;
     }
-    setActiveUsers([...activeUsers, id]); //сравнение по ссылкам
+    setActiveUsers([...activeUsers, id]);
   };
 
   const getNamesById = () => {
