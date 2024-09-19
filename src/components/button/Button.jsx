@@ -1,8 +1,8 @@
 import cn from "classnames";
 import styles from "./button.module.scss";
 
-function Button() {
-  return <button className={cn(styles.btn, styles["btn--send"])}>Отправить</button>;
+function Button({ text, use }) {
+  return <button className={cn(styles.btn, styles[`btn--${use}`])}>{text}</button>;
 }
 
 export default Button;

@@ -1,5 +1,4 @@
 import CardList from "../cardList/CardList";
-import Form from "../form/Form";
 
 const data = [
   {
@@ -28,10 +27,10 @@ export default function App() {
   return (
     <>
       <CardList data={data}></CardList>
-      <Form></Form>
     </>
   );
 }
+
 /*
 - работа с инпутом:
 -- обязательно должно быть что-то введено или ошибка
